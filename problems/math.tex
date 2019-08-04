@@ -1,0 +1,108 @@
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[T2A]{fontenc} % Поддержка русских букв
+\usepackage[utf8]{inputenc} % Кодировка utf8
+\usepackage[english, russian]{babel} % Языки: русский, английский
+% \usepackage{pscyr} % Нормальные шрифты
+
+\usepackage{amsmath, amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[left=1.5cm,right=2cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {./pic/} }
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+% Цвета для гиперссылок
+\definecolor{linkcolor}{HTML}{799B03} % цвет ссылок
+\definecolor{urlcolor}{HTML}{799B03} % цвет гиперссылок
+\hypersetup{pdfstartview=FitH,  linkcolor=linkcolor,urlcolor=urlcolor, colorlinks=true}
+
+\def\Z{\mathbb{Z}}
+\def\N{\mathbb{N}}
+\def\R{\mathbb{R}}
+\def\F{\mathbb{F}}
+\def\Q{\mathbb{Q}}
+
+\def\E{\mathrm{\mathbb{E}}}
+\def\D{\mathrm{\mathbb{D}}}
+\def\P{\mathrm{P}}
+
+\newcounter{znum}
+\newcommand{\z}[1]{\addtocounter{znum}{1} \textbf{Задача \arabic{znum}#1. }}
+
+\newcounter{defnum}
+\newcommand{\df}[1]{\addtocounter{defnum}{1} \textbf{Определение \arabic{defnum}.} {\it #1}}
+
+\renewcommand{\!}{\textcolor{red}{!}}
+
+
+\begin{document}
+	
+\thispagestyle{empty}
+\begin{center}
+	\large
+	\textbf{Задачи по терверу}
+	\normalsize
+\end{center}
+
+
+\begin{center}
+	\textbf{Распределения}
+\end{center}
+
+\z{} Где находится $\alpha$-тая квантиль у равномерного распределения на [-1, 1]?
+
+\z{} Нарисуйте ф-ции распределения и плотности (если она есть) для следующих случайных величин:  
+
+\textbf{а)} Бернуллиевская  
+
+\textbf{б)} Дискретная случайная величина, принимающая значение $a_i$ с вероятностью $p_i$  
+
+\textbf{в)} Раномерное на [a, b]  
+
+\textbf{г*)} Сумма двух независимых равномерных на [0, 1]  
+
+\textbf{д*)} Максимум из двух независимых равномерных на [0, 1]  
+
+\z{} Как сгенерировать на компе сэмпл из случайной величины с ф-цией распределения $F$, если известно как посчитать $F^{-1}$?
+
+\z{} Есть два распределения, мы кидаем монетку и если выпал орел сэмплируем число из первого распределения, если решка -- из второго. Как выражается функция распределения полученной случайной величины, через функции распределения исходных величин?
+
+\z{} Как изменится функция распределения случайной величины, если к ней добавить \textbf{а)} константу? \textbf{б)} бернуллиевскую случайную величину с вероятностью единицы равной p?
+
+\z{*} Как связаны функции плотности и распределения?
+
+\begin{center}
+	\textbf{Про тест Манна-Уитни}
+\end{center}
+
+\z{} Убедитесь, что статистику Манна-Уитни можно посчитать так: объединить две выборки в одну большую выборку и отсортировать ее. Затем для каждого начального отрезка большой выборки нарисовать точку с координатами $(n_1, n_2)$, где $n_1$ и $n_2$ -- количества объектов в начальном отрезке, пришедших из первой и второй выборки соответственно. И наконец соединить построенные точки ломаной и посчитать площадь под ее графиком. Какова вычислительная сложность этого алгоритма при аккуратной реализации?
+
+\z{} Приведите пример таких величин X, Y что $\P(Y > X) > 1/2$, но $\E(Y) < \E(X)$.
+
+\z{} Приведите пример таких величин X, Y и Z, что 
+$$\P(Y > X) > 1/2,\quad  \P(Z > Y) > 1/2 \quad \mbox{и} \quad \P(X > Z) > 1/2.$$
+
+\z{*} Посчитайте дисперсию статистики Манна-Уитни при условии нулевой гипотезы.
+
+\begin{center}
+	\textbf{Разное.}
+\end{center}
+
+
+\z{*} Пусть $X_1, \ldots , X_n$ -- независимые одинаково распределенные величины с матожиданием $m$ и дисперсией $d$. Пусть $\hat m = \frac{1}{n} \sum_{i = 1}^n X_i$.
+
+\textbf{а)} Посчитайте матожидание выборочной дисперсии:
+$$ \hat d = \frac1n \sum_{i=1}^n (X_i - \hat m)^2$$
+
+\textbf{б)} Предложите оценку дисперсии, такую что ее матожидание равно $d$.
+
+\z{**} Посчитайте правильное pvalue для "теста Гальтона".
+
+\end{document}

@@ -1,0 +1,103 @@
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[T2A]{fontenc} % Поддержка русских букв
+\usepackage[utf8]{inputenc} % Кодировка utf8
+\usepackage[english, russian]{babel} % Языки: русский, английский
+% \usepackage{pscyr} % Нормальные шрифты
+
+\usepackage{amsmath, amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[left=1.5cm,right=2cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {./pic/} }
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+% Цвета для гиперссылок
+\definecolor{linkcolor}{HTML}{799B03} % цвет ссылок
+\definecolor{urlcolor}{HTML}{799B03} % цвет гиперссылок
+\hypersetup{pdfstartview=FitH,  linkcolor=linkcolor,urlcolor=urlcolor, colorlinks=true}
+
+\def\Z{\mathbb{Z}}
+\def\N{\mathbb{N}}
+\def\R{\mathbb{R}}
+\def\F{\mathbb{F}}
+\def\Q{\mathbb{Q}}
+
+\def\E{\mathrm{\mathbb{E}}}
+\def\D{\mathrm{\mathbb{D}}}
+\def\P{\mathrm{P}}
+
+\newcounter{znum}
+\newcommand{\z}[1]{\addtocounter{znum}{1} \textbf{Задача \arabic{znum}#1. }}
+
+\newcounter{defnum}
+\newcommand{\df}[1]{\addtocounter{defnum}{1} \textbf{Определение \arabic{defnum}.} {\it #1}}
+
+\renewcommand{\!}{\textcolor{red}{!}}
+
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}
+	\large
+	\textbf{Концентрированный ликбез по терверу}
+\end{center}
+
+Конечное множество $\Omega$ является \emph{конечным вероятностным пространством}, если для любого его подмножества $A \subset \Omega$ задана его \emph{вероятность} $\P(A)$ и выполняются следующие условия:
+
+$\bullet$ $\P(\varnothing) = 0, \P(\Omega) = 1$.
+
+$\bullet$ Для любого $A \subset \Omega$ верно $\P(A) \geqslant 0$.
+
+$\bullet$ Для любых $A, B\subset \Omega$ верно $\P(A\cup B) = \P(A) + \P(B) - \P(A\cap B)$.
+
+Элементы $\omega \in \Omega$ принято называть \emph{элементарными исходами}, а подмножества $\Omega$ --- \emph{событиями}. События A и B называются \emph{независимыми}, если $\P(A \cap B) = \P(A) \cdot \P(B)$.
+
+\emph{Случайной величиной} (на вероятностном пространстве $\Omega$) называется произвольная функция $X$ из $\Omega$ в вещественные числа. \emph{Математическим ожиданием} (оно же \emph{матожидание}) случайной величины $X$ называется число
+
+$$\E(X) = \sum_{\omega \in \Omega} X(\omega) \P(\omega).$$
+
+\z{} Для произвольных величин $X$ и $Y$ докажите что $\E(X + Y) = \E(X) + \E(Y)$.
+
+\z{} Докажите что тогда формулу для ее матожидания можно переписать так:
+$$\E(X) = \sum_{x \in X(\Omega)} x \cdot \P(X = x)$$
+
+\z{ (неравенство Маркова)} Пусть $X$ - неотрицательная случайная величина (т. е. $\P(X \geqslant 0) = 1$). Докажите что для любого положительного $a$ верно что $\P(X \geqslant a) \leqslant \frac{\E(X)}{a}$.
+
+\z{} В некоторой лотерее билет стоит 100 рублей и 40\% средств идут на выплату призов. Докажите что вероятность выиграть 5000 рублей меньше 1\%.
+
+\df{Случайные величины $X$ и $Y$ называются \textbf{независимыми}, если любые двух $a$ и $b$ события вида $X = a$ и $Y = b$ независимы.}
+
+\z{} Пусть $A$ и $B$ -- произвольные множества. Докажите, что если случайные величины $X$ и $Y$ независимы то события $X \in A$ и $Y \in B$ независимы.
+
+\z{} Приведите пример двух независимых и двух зависимых случайных величин.
+
+\z{} Пусть величины $X$ и $Y$ независимы, докажите что $\E (X\cdot Y) = \E(X)\cdot \E(Y)$.
+
+\z{} Приведите контрпример к утверждению предыдущей задачи для зависимых случайных величин.
+
+\df{\textbf{Дисперсией} случайной величины $X$ называется число}
+$$\D(X) = \E\left((X - \E(X))^2\right)$$.
+
+\z{} Дисперсия величины $X$ равна $d$, чему тогда равна дисперсия
+
+\textbf{а)} величины $X + с$?
+
+\textbf{б)} величины $a \cdot X$?
+
+\z{} Пусть величины $X$ и $Y$ независимы, докажите что $\D (X + Y) = \D(X) + \D(Y)$.
+
+\z{ (неравенство Чебышева)} Докажите что $\P(| X - \E(X)| \geqslant a) \leqslant \frac{\D(X)}{a^2}$.
+
+\z{} Пусть $X_1, \ldots, X_n$ -- независимые случайные величины с дисперсией $d$. Найдите дисперсию величины $S_n = \frac{X_1 + \ldots + X_n}{n}$
+
+\z{ (Слабый закон больших чисел)} Пусть $X_1, \ldots, X_n$ -- независимые случайные величины с неизвестным вам матожиданием $m$. Известно, что дисперсия каждой из них не превосходит $d$. Вам дали задание оценить $m$ с точностью $\varepsilon > 0$ и дали право ошибаться с вероятностью $\delta > 0$. Какое нужно взять $n$, чтобы оценка $S_n = \frac{X_1 + \ldots + X_n}{n}$ подходила?
+
+\end{document}
