@@ -2,4 +2,4 @@
 problems/*.aux
 problems/*.log
 problems/*.out
-problems/*.syntex.gz
+problems/*.synctex.gz
