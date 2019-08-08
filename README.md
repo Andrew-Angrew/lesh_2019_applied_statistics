@@ -103,8 +103,7 @@
 
 [Группа кафедры матстата в vk](https://vk.com/mathstat_mm). B частности там выложена особенно веселая [pdf-ка с загадками про аналитику][analytical_puzzles].
 
-[википедия](https://en.wikipedia.org/wiki/Data_dredging) про p-hacking
-
+[Карикатура](/materials/bayesian_vs_frequentist.png) про байесовскую и частотную статистику.
 
 [panchin]: https://www.youtube.com/watch?v=dcVG0NtZMwE
 [ya_abt]: https://youtu.be/dvf_x3V0j88?t=3528
