@@ -42,7 +42,7 @@
 * Добавка к видео:
     * Провальные опросы избирателей в 1936 ("The  Literary  Digest") и 1948 ("Chicago Daily Tribune").
     * Про приклеивание почтовой марки для отправки ответа
-![](/materials/bayesian_vs_frequentist.png)
+![](/materials/bayesian_vs_frequentist.png  =250x)
 * Круто, когда есть prior. Но часто его неоткуда взять.
 
 ## 3. Множественные сравнения:
@@ -102,8 +102,6 @@
 Историю про булочную и нормальное распределение можно прочитать в книге "Gamov, Stern. Puzzle-math." (Гамов -- тот самый "физический" Гамов). Или [тут](https://pikabu.ru/story/eshche_raz_o_normalnom_raspredelenii_6213153).
 
 [Группа кафедры матстата в vk](https://vk.com/mathstat_mm). B частности там выложена особенно веселая [pdf-ка с загадками про аналитику][analytical_puzzles].
-
-[Карикатура](/materials/bayesian_vs_frequentist.png) про байесовскую и частотную статистику.
 
 [panchin]: https://www.youtube.com/watch?v=dcVG0NtZMwE
 [ya_abt]: https://youtu.be/dvf_x3V0j88?t=3528
