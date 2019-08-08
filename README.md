@@ -42,7 +42,7 @@
 * Добавка к видео:
     * Провальные опросы избирателей в 1936 ("The  Literary  Digest") и 1948 ("Chicago Daily Tribune").
     * Про приклеивание почтовой марки для отправки ответа
-![](/materials/bayesian_vs_frequentist.png =250x)
+![](/materials/bayesian_vs_frequentist.png =250x250)
 * Круто, когда есть prior. Но часто его неоткуда взять.
 
 ## 3. Множественные сравнения:
