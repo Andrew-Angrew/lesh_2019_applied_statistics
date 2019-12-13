@@ -107,7 +107,7 @@
 
 [Группа кафедры матстата в vk](https://vk.com/mathstat_mm). B частности там выложена особенно веселая [pdf-ка с загадками про аналитику][analytical_puzzles].
 
-[panchin]: https://www.youtube.com/watch?v=dcVG0NtZMwE
+[panchin]: https://www.youtube.com/watch?v=7To5LPZ9mxc
 [ya_abt]: https://youtu.be/dvf_x3V0j88?t=3528
 [mistakes]: https://youtu.be/BOxC1_xHP9A?t=130
 [correleations]: http://tylervigen.com/spurious-correlations
