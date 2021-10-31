@@ -99,7 +99,8 @@
 * Панчин 20 мин про publication bias и множественные сравнения: [youtube][panchin] 
 * Ит-Лекториум фкн про ошибки в анализе данных: [youtube][mistakes]. Первые 2-26 минуты до курицы и яйца. Хорошие примеры смещения выборок и намайненных корреляций.  
 * Ит-Лекториум фкн про аналитику в Яндексе: [youtube][ya_abt]. Последняя история про ab-тесты в видео зачетная (последние 10 мин).  
-* [Яндекс изнутри](https://events.yandex.ru/lib/talks/5559/) про ab-тесты и повышение чувствительности метрик с помощью ML (для взрослых детей).  
+* [Яндекс изнутри](https://events.yandex.ru/lib/talks/5559/) про ab-тесты и повышение чувствительности метрик с помощью ML (для взрослых детей).
+* [интервью][ab_tests_in_production] про ab-тесты в реальных сервисах. Галопом по Европам, но все правильно.
 
 [Сборник "подозрительных" корреляций](http://tylervigen.com/spurious-correlations).
 
@@ -112,3 +113,4 @@
 [mistakes]: https://youtu.be/BOxC1_xHP9A?t=130
 [correleations]: http://tylervigen.com/spurious-correlations
 [analytical_puzzles]: https://vk.com/doc821751_493607410?hash=353d43eabb6d5e3592&dl=3be03f004a5d20f2b8
+[ab_tests_in_production]: https://www.youtube.com/watch?v=gljfGAkgX_o
