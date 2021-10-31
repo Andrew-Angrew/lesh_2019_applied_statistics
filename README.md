@@ -96,7 +96,7 @@
 <a name="links"/> Ссылки на материалы
 =====================================
 Видосы:  
-* Панчин 20 мин в основном про множественные сравнения: [youtube][panchin] (вопросы лучше не слушать)  
+* Панчин 20 мин про publication bias и множественные сравнения: [youtube][panchin] 
 * Ит-Лекториум фкн про ошибки в анализе данных: [youtube][mistakes]. Первые 2-26 минуты до курицы и яйца. Хорошие примеры смещения выборок и намайненных корреляций.  
 * Ит-Лекториум фкн про аналитику в Яндексе: [youtube][ya_abt]. Последняя история про ab-тесты в видео зачетная (последние 10 мин).  
 * [Яндекс изнутри](https://events.yandex.ru/lib/talks/5559/) про ab-тесты и повышение чувствительности метрик с помощью ML (для взрослых детей).  
@@ -107,7 +107,7 @@
 
 [Группа кафедры матстата в vk](https://vk.com/mathstat_mm). B частности там выложена особенно веселая [pdf-ка с загадками про аналитику][analytical_puzzles].
 
-[panchin]: https://www.youtube.com/watch?v=7To5LPZ9mxc
+[panchin]: https://www.youtube.com/watch?v=4w9t4McuAy8
 [ya_abt]: https://youtu.be/dvf_x3V0j88?t=3528
 [mistakes]: https://youtu.be/BOxC1_xHP9A?t=130
 [correleations]: http://tylervigen.com/spurious-correlations
