@@ -108,6 +108,8 @@
 
 [Группа кафедры матстата в vk](https://vk.com/mathstat_mm). B частности там выложена особенно веселая [pdf-ка с загадками про аналитику][analytical_puzzles].
 
+Мемный [микро-пост](https://thinkcognitive.org/ru/blog/kak-ne-putat-oshibki-i-i-ii-roda#.YYI7FZtRVH4) о том, как не путать ошибки первого и второго рода.
+
 [panchin]: https://www.youtube.com/watch?v=4w9t4McuAy8
 [ya_abt]: https://youtu.be/dvf_x3V0j88?t=3528
 [mistakes]: https://youtu.be/BOxC1_xHP9A?t=130
